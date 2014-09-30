@@ -46,12 +46,14 @@ set background=dark
 "Police
 
 set guifont=Monaco:h16
-set antialias"
+set antialias
 
 " Réglages pour l'édition
-nmap w W "avoir w qui renvoie vers W, utile pour TeX. \command constitue un seul mot
+" avoir w qui renvoie vers W, utile pour TeX. \command constitue un seul mot
+nmap w W
 
 
 " Les , sont rarement utilises l’un a la suite de l’autre
-:imap ,, <Esc>
-:map ,, <Esc>
+imap ,, <Esc>
+map ,, <Esc>
+
