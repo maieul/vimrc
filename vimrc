@@ -60,11 +60,6 @@ nmap w W
 
 " lorsqu'on frappe un point, sauvegarder automatiquement
 imap . .<Esc>:w<CR>a
-" Orthographe
-setlocal spell spelllang=fr
-autocmd BufEnter *.txt set spell
-autocmd BufEnter *.tex set spell
-
 " Les , sont rarement utilises l’un a la suite de l’autre
 imap ,, <Esc>
 map ,, <Esc>
