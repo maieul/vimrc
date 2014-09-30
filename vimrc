@@ -54,7 +54,7 @@ set antialias
 " Réglages pour l'édition
 " Avoir de l'UTF-8 par défaut
 
-encoding=utf-8
+set encoding=utf-8
 " avoir w qui renvoie vers W, utile pour TeX. \command constitue un seul mot
 nmap w W
 
