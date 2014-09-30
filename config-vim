@@ -1,9 +1,12 @@
 " Vim Configuration - Maïeul Rouquette
+" Inspiré de VIM Configuration - Vincent Jousse
+call pathogen#infect()
 
-" VIM Configuration - Vincent Jousse
 " Annule la compatibilite avec l'ancetre Vi : totalement indispensable
 set nocompatible
 
+
+"Affichage
 set title                 " Met a jour le titre de votre fenetre ou de
                           " votre terminal
 set number                " Affiche le numero des lignes
