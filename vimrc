@@ -5,6 +5,8 @@ call pathogen#infect()
 " Annule la compatibilite avec l'ancetre Vi : totalement indispensable
 set nocompatible
 
+" Fichier de swap
+set dir=~/.vimswp
 
 "Affichage
 set title                 " Met a jour le titre de votre fenetre ou de
