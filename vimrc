@@ -43,7 +43,7 @@ syntax enable
 filetype on
 filetype plugin on
 filetype indent on
-
+let g:tex_flavor='latex'
 " Utilise la version sombre de Solarized
 set background=dark
 "colorscheme solarized
@@ -60,8 +60,6 @@ set encoding=utf-8
 " avoir w qui renvoie vers W, utile pour TeX. \command constitue un seul mot
 nmap w W
 
-" lorsqu'on frappe un point, sauvegarder automatiquement
-imap . .<Esc>:w<CR>a
 " Les , sont rarement utilises l’un a la suite de l’autre
 imap ,, <Esc>
 map ,, <Esc>
