@@ -43,6 +43,7 @@ syntax enable
 filetype on
 filetype plugin on
 filetype indent on
+set ai "indentation automatique"
 let g:tex_flavor='latex'
 " Utilise la version sombre de Solarized
 set background=dark
