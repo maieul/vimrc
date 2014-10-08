@@ -73,3 +73,7 @@ nmap w W
 imap ,, <Esc>l:w<CR>
 map ,, <Esc>
 
+"Orthographe
+
+set spell
+set spelllang=fr
