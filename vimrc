@@ -70,6 +70,6 @@ set encoding=utf-8
 nmap w W
 
 " Les , sont rarement utilises l’un a la suite de l’autre
-imap ,, <Esc>:w<CR>
+imap ,, <Esc>l:w<CR>
 map ,, <Esc>
 
