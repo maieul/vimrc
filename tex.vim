@@ -1,3 +1,4 @@
+set grepprg=grep\ -nH\ $*
 "taille de l'indentation"
 
 set sw=2
