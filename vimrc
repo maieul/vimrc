@@ -44,6 +44,14 @@ filetype on
 filetype plugin on
 filetype indent on
 set ai "indentation automatique"
+
+" Réglages spécifiques monde tex
+
+augroup filetypedetect
+	au! BufRead,BufNewFile *.bbx	setfiletype tex
+	au! BufRead,BufNewFile *.dbx	setfiletype tex
+	au! BufRead,BufNewFile *.lbx	setfiletype tex
+	au! BufRead,BufNewFile *.cbx	setfiletype tex
 let g:tex_flavor='latex'
 " Utilise la version sombre de Solarized
 set background=dark
