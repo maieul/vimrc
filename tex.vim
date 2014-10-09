@@ -1,6 +1,9 @@
 "Les alt
 set winaltkeys=no
 
+"Pour utiliser le @"
+
+imap <Alt-B> <Plug>Tex_MathBF
 set grepprg=grep\ -nH\ $*
 "taille de l'indentation"
 
