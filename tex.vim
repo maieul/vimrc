@@ -1,3 +1,6 @@
+"Les alt
+set winaltkeys=no
+
 set grepprg=grep\ -nH\ $*
 "taille de l'indentation"
 
