@@ -66,8 +66,6 @@ set antialias
 " Avoir de l'UTF-8 par défaut
 
 set encoding=utf-8
-" avoir w qui renvoie vers W, utile pour TeX. \command constitue un seul mot
-nmap w W
 
 " Les , sont rarement utilises l’un a la suite de l’autre
 imap ,, <Esc>l:w<CR>
