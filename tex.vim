@@ -22,3 +22,7 @@ set foldmethod=syntax
 " lorsqu'on frappe un point, sauvegarder automatiquement
 
 imap . .<Esc>:w<CR>a
+
+"Raccourci pour environment
+
+let g:Tex_PromptedEnvironments = 'itemize,enumerate,frame'
