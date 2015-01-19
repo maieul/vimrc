@@ -15,7 +15,7 @@ set number                " Affiche le numero des lignes
 set ruler                 " Affiche la position actuelle du curseur
 set wrap                  " Affiche les lignes trop longues sur plusieurs
                           " lignes
-
+set linebreak
 set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
                           " (pour le scroll)
 
