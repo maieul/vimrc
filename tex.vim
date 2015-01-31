@@ -25,4 +25,4 @@ imap . .<Esc>:w<CR>a
 
 "Raccourci pour environment
 
-let g:Tex_PromptedEnvironments = 'itemize,enumerate,frame'
+let g:Tex_PromptedEnvironments = 'itemize,enumerate,slide,frame'
