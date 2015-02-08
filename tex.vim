@@ -26,3 +26,8 @@ imap . .<Esc>:w<CR>a
 "Raccourci pour environment
 
 let g:Tex_PromptedEnvironments = 'itemize,enumerate,slide,frame'
+
+"Frapper les guillemets rapidement
+let g:Tex_SmartQuoteOpen="\\enquote{"
+let g:Tex_SmartQuoteClose="}"
+
