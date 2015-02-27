@@ -1,6 +1,10 @@
 "Les alt
 set winaltkeys=no
 
+"Pas plus de 79 caractère pas ligne, sinon de tout facon l'œil a du mal à
+"suivre
+:set tw=79
+
 "Pour le passage de mot en mot
 
 set iskeyword+=\
