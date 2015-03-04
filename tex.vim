@@ -10,7 +10,7 @@ imap <Alt-B> <Plug>Tex_MathBF
 set grepprg=grep\ -nH\ $*
 
 "pour pas plus de 80 caractère par ligne visuellement
-set textwidth=79
+set columns=79
 
 "taille de l'indentation"
 set sw=2
