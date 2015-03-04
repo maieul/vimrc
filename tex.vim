@@ -22,9 +22,10 @@ imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
 "Replis"
 
 set foldmethod=syntax
-" lorsqu'on frappe un point, sauvegarder automatiquement
+" supprimer le \ldots auto, que de toute facon je
+" n'utilise pas
 
-imap . .<Esc>:w<CR>a
+let g:Tex_SmartKeyDot=0
 
 "Raccourci pour environment
 
