@@ -9,8 +9,6 @@ set iskeyword+=\
 imap <Alt-B> <Plug>Tex_MathBF
 set grepprg=grep\ -nH\ $*
 
-"pour pas plus de 80 caractère par ligne visuellement
-set columns=79
 
 "taille de l'indentation"
 set sw=2
