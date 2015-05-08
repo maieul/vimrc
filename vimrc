@@ -75,3 +75,8 @@ map ,, <Esc>
 
 set spell
 set spelllang=fr
+
+"Copier-coller vers vrai presse papier
+
+map cc "+y
+map vv "+p
