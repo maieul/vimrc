@@ -80,3 +80,7 @@ set spelllang=fr
 
 map cc "+y
 map vv "+p
+
+"Pour tjr remonter à gauche avec voom
+
+let g:voom_always_allow_move_left = 1
