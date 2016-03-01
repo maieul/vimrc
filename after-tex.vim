@@ -9,11 +9,14 @@ imap . .<CR><Esc>:w<CR>a
 
 " 
 command Plan Voom latex
-" Double {{ et autres
+
+" Citation et note de bas de page
+:call IMAP('fn', '\footnote{<++>}<++>')
+:call IMAP('fc', '\footcite[<++>]{<++>}<++>', 'tex')
+" Double {{ et autres (annulation de commande défini en standard)
 call IMAP('::', '::', 'tex')
 call IMAP('{{', '{{', 'tex')
 call IMAP('((', '((', 'tex')
 call IMAP('[[', '[[', 'tex')
 call IMAP('$$', '$$', 'tex')
-
 
