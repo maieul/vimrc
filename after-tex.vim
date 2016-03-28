@@ -1,3 +1,4 @@
+" Chargé par ~/vim/after/ftpplugin/tex.vim
 " 80 à l'affichage
 
 set columns=80
