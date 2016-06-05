@@ -52,6 +52,7 @@ augroup filetypedetect
 	au! BufRead,BufNewFile *.dbx	setfiletype tex
 	au! BufRead,BufNewFile *.lbx	setfiletype tex
 	au! BufRead,BufNewFile *.cbx	setfiletype tex
+augroup END
 let g:tex_flavor='latex'
 " Utilise la version sombre de Solarized
 set background=dark
@@ -75,7 +76,10 @@ map ,, <Esc>
 
 set spell
 set spelllang=fr
-
+augroup SpellTeX
+  au!
+  au BufNewFile,BufRead *.dtx  setl spelllang=en
+augroup END
 "Copier-coller vers vrai presse papier
 
 map cc "+y
