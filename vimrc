@@ -20,6 +20,7 @@ set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
                           " (pour le scroll)
 
 "Indentation
+set autoindent 
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
