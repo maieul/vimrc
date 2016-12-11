@@ -19,6 +19,10 @@ set linebreak
 set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
                           " (pour le scroll)
 
+"Indentation
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 " -- Recherche
 set ignorecase            " Ignore la casse lors d'une recherche
 set smartcase             " Si une recherche contient une majuscule,
