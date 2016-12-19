@@ -1,3 +1,5 @@
+"Indentation en espace pour latex
+set expandtab
 "Les alt
 set winaltkeys=no
 
