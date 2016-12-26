@@ -93,3 +93,15 @@ map vv "+p
 "Pour tjr remonter à gauche avec voom
 
 let g:voom_always_allow_move_left = 1
+
+
+"PHP https://github.com/StanAngeloff/php.vim
+function! PhpSyntaxOverride()
+  hi! def link phpDocTags  phpDefine
+  hi! def link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
