@@ -1,3 +1,10 @@
+"Lang
+set spell
+set spelllang=fr
+augroup SpellTeX
+  au!
+  au BufNewFile,BufRead *.dtx  setl spelllang=en
+augroup END
 "Indentation en espace pour latex
 set expandtab
 "Les alt

@@ -79,12 +79,6 @@ map ,, <Esc>
 
 "Orthographe
 
-set spell
-set spelllang=fr
-augroup SpellTeX
-  au!
-  au BufNewFile,BufRead *.dtx  setl spelllang=en
-augroup END
 "Copier-coller vers vrai presse papier
 
 map cc "+y
