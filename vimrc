@@ -99,3 +99,10 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+" Activer les caractères invisibles
+function! Invisibles()
+	:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+	:set list
+endfunction
+command Inv call Invisibles()
