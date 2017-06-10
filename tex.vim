@@ -6,7 +6,9 @@ augroup SpellTeX
   au BufNewFile,BufRead *.dtx  setl spelllang=en
 augroup END
 "Indentation en espace pour latex
-set expandtab
+setlocal expandtab
+setlocal shiftwidth=2
+setlocal softtabstop=2
 "Les alt
 set winaltkeys=no
 
