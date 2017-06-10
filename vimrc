@@ -101,8 +101,6 @@ augroup phpSyntaxOverride
 augroup END
 
 " Activer les caractères invisibles
-function! Invisibles()
-	:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-	:set list
-endfunction
-command Inv call Invisibles()
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+command Inv set list
+command NoInv set nolist
