@@ -24,7 +24,7 @@ function CB_content()
 		let g:l = 0
 		return '<cb n="'.g:c.'" />'.LB_content()
 	endif
-	return ''
+	return LB_content()
 endfunction
 
 function LB_content()
