@@ -23,8 +23,10 @@ function CB_content()
 		let g:c = g:c + 1
 		let g:l = 0
 		return '<cb n="'.g:c.'" />'.LB_content()
+	else
+		let g:l = 0
+		return LB_content()
 	endif
-	return LB_content()
 endfunction
 
 function LB_content()
