@@ -19,7 +19,7 @@ function PB_content()
 endfunction
 
 function CB_content()
-	if g:col == 1
+	if g:col > 0
 		let g:c = g:c + 1
 		let g:l = 0
 		return '<cb n="'.g:c.'" />'.LB_content()
