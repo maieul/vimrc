@@ -31,9 +31,23 @@ endfunction
 
 function LB_content()
 	let g:l = g:l + 1
-	return '<lb n="'.g:l.'" />'
+	if Test_caractere_suivant_espace() == 1
+		echom "oui"
+		return '<lb n="'.g:l."\" />\r\n"
+	else
+		return '<lb n="'.g:l.'" />'
 endfunction
 
+function Test_caractere_suivant_espace()
+"Test si le caractère suivant est une espace"
+	let position = getcurpos()
+	let ligne = getline(position[1])
+	let car_suivant = ligne[position[2]]
+	if car_suivant == ' '
+		return 1
+	else 
+		return 0
+endfunction
 
 command PB exe":normal a".PB_content()
 command CB exe":normal a".CB_content()
