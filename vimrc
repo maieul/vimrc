@@ -88,6 +88,13 @@ map vv "+p
 
 let g:voom_always_allow_move_left = 1
 
+function Chercher(pattern)
+	execute "w"
+	execute "vimgrep /".a:pattern."/ %"
+	execute "copen"
+endfunction
+
+command! -nargs=* Ch :call Chercher(<q-args>)
 
 "PHP https://github.com/StanAngeloff/php.vim
 function! PhpSyntaxOverride()
