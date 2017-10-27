@@ -56,7 +56,7 @@ command LB exe":normal a".LB_content()
 "balisage complexe et fréquent
 function Prae()
 	let s="\r\n<choice>\r\n"
-	let s=s."<abbr>p̅</abbr>\r\n"
+	let s=s."<abbr type=\"tachy\">p̅</abbr>\r\n"
 	let s=s."<expan cert=\"high\">prae</expan>\r\n"
 	let s=s."<expan cert=\"high\">pre</expan>\r\n"
 	let s=s."</choice>\r\n"
