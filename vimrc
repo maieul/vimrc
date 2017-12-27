@@ -111,3 +111,6 @@ augroup END
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 command Inv set list
 command NoInv set nolist
+
+"Activer la souris
+set mouse=a
