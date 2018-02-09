@@ -22,6 +22,7 @@ function PB_content()
 		return '<pb n="'.g:p.g:f.'" />'.CB_content()
 	else
 		let g:p = g:p + 1
+		let g:c = 0
 		return '<pb n="'.g:p.'" />'.CB_content()
 endfunction
 
