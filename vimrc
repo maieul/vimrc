@@ -114,3 +114,6 @@ command NoInv set nolist
 
 "Activer la souris
 set mouse=a
+
+"Désactiver le bip bisuel
+set novb
