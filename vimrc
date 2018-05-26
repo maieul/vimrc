@@ -117,3 +117,9 @@ set mouse=a
 
 "Désactiver le bip bisuel
 set novb
+
+"cls
+
+augroup filetypedetect
+    au BufRead,BufNewFile *.cls set filetype=tex 
+augroup EN
