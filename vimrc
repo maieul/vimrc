@@ -73,7 +73,8 @@ set autoindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set list listchars=tab:❘\ ,trail:·,extends:»,precedes:«,nbsp:×
+
+
 " -- Recherche
 set ignorecase            " Ignore la casse lors d'une recherche
 set smartcase             " Si une recherche contient une majuscule,
