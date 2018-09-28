@@ -46,8 +46,10 @@ Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 
 Plug 'https://github.com/vim-latex/vim-latex.git'
 Plug 'https://github.com/vim-voom/VOoM.git'
-call plug#end()
 
+Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
+call plug#end()
+filetype plugin indent on
 
 " Annule la compatibilite avec l'ancetre Vi : totalement indispensable
 set nocompatible
