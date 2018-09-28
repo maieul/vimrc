@@ -48,6 +48,7 @@ Plug 'https://github.com/vim-latex/vim-latex.git'
 Plug 'https://github.com/vim-voom/VOoM.git'
 
 Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
+Plug 'francoiscabrol/ranger.vim'
 call plug#end()
 filetype plugin indent on
 
