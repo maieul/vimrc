@@ -1,6 +1,53 @@
 " Vim Configuration - Maïeul Rouquette
-" Inspiré de VIM Configuration - Vincent Jousse
-call pathogen#infect()
+" https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdcommenter'
+Plug 'https://github.com/majutsushi/tagbar.git'
+Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'http://github.com/mattn/emmet-vim.git'
+Plug 'https://github.com/iamcco/markdown-preview.vim.git'
+Plug 'https://github.com/plasticboy/vim-markdown.git'
+Plug 'https://github.com/dkarter/bullets.vim.git'
+
+Plug 'https://github.com/ap/vim-css-color.git'
+Plug 'https://github.com/hail2u/vim-css3-syntax.git'
+Plug 'https://github.com/groenewege/vim-less.git'
+Plug 'https://github.com/elzr/vim-json.git'
+
+Plug 'https://github.com/stephpy/vim-yaml.git'
+
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/junegunn/vim-easy-align.git'
+Plug 'https://github.com/gagoar/StripWhiteSpaces.git'
+
+Plug 'https://github.com/vim-scripts/cmdline-completion.git'
+
+Plug 'https://github.com/haya14busa/incsearch.vim.git'
+Plug 'https://github.com/pelodelfuego/vim-swoop.git'
+Plug 'https://github.com/brooth/far.vim.git'
+
+Plug 'https://github.com/mhinz/vim-signify.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/christoomey/vim-conflicted.git'
+Plug 'https://github.com/jreybert/vimagit.git'
+
+
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/FelikZ/ctrlp-py-matcher.git'
+
+Plug 'https://github.com/terryma/vim-multiple-cursors.git'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
+Plug 'https://github.com/gioele/vim-autoswap.git'
+
+Plug 'https://github.com/machakann/vim-highlightedyank.git'
+Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
+
+Plug 'https://github.com/vim-latex/vim-latex.git'
+Plug 'https://github.com/vim-voom/VOoM.git'
+call plug#end()
+
 
 " Annule la compatibilite avec l'ancetre Vi : totalement indispensable
 set nocompatible
@@ -20,7 +67,7 @@ set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
                           " (pour le scroll)
 
 "Indentation
-set autoindent 
+set autoindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -121,5 +168,5 @@ set novb
 "cls
 
 augroup filetypedetect
-    au BufRead,BufNewFile *.cls set filetype=tex 
+    au BufRead,BufNewFile *.cls set filetype=tex
 augroup EN
