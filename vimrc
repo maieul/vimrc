@@ -100,6 +100,10 @@ filetype plugin on
 filetype indent on
 set ai "indentation automatique"
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"		SWOOP
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:swoopWindowsVerticalLayout = 1
 " Réglages spécifiques monde tex
 
 augroup filetypedetect
