@@ -2,14 +2,13 @@
 " 80 à l'affichage
 
 set columns=80
-" point -> sauvegarde auto + 
+" point -> sauvegarde auto +
 "Si je tape .~, cela m'insère juste un point puis un ~
 "Si je tape juste un point, cela me sauvegarde et fait un retour ligne
 imap .~ <C-V>046~
 imap . .<CR><Esc>:w<CR>a
 
-" 
-command Plan Voom latex
+command! Plan Voom latex
 
 " Citation et note de bas de page
 :call IMAP('fn', '\footnote{<++>}<++>','tex')
