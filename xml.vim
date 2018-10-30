@@ -40,7 +40,6 @@ endfunction
 function LB_content()
 	let g:l = g:l + 1
 	if Test_caractere_suivant_espace() == 1
-		echom "oui"
 		return '<lb n="'.g:l."\" />\r\n"
 	else
 		return '<lb n="'.g:l.'" />'
