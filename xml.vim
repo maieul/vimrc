@@ -53,12 +53,10 @@ function Test_caractere_suivant_espace()
 	let car_suivant = ligne[position[2]]
 	if car_suivant == ' '
 		return 1
-	else 
+	else
 		return 0
 endfunction
 
 command PB exe":normal a".PB_content()
 command CB exe":normal a".CB_content()
 command LB exe":normal a".LB_content()
-
-
