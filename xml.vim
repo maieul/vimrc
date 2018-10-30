@@ -4,12 +4,29 @@ let g:l = 0
 let g:c = 0
 let g:p = 0
 let g:f = "v"
+let g:m = 0
+let g:sm = 0
 
 " les booleens
 let g:col = 1
 let g:folio = 1
+let g:submilestone = 0
+
 
 " les commandes d'insertion/d'incrémentation
+
+function MS_content()
+	if g:submilestone == 0
+		let g:m = g:m+1
+		let ms = g:m
+	else
+		let g:sm = g:sm+1
+		let ms = g:m.'.'.g:sm
+	endif
+	return "<milestone n=\"".ms."\" />\n\r"
+endfunction
+
+
 function PB_content()
 	if g:folio == 1
 		if g:f == "r"
@@ -59,3 +76,4 @@ endfunction
 command PB exe":normal a".PB_content()
 command CB exe":normal a".CB_content()
 command LB exe":normal a".LB_content()
+command MS exe":normal a".MS_content()
