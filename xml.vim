@@ -4,13 +4,13 @@ let g:l = 0
 let g:c = 0
 let g:p = 0
 let g:f = "v"
-let g:m = 0
+let g:m = 1
 let g:sm = 0
 
 " les booleens
 let g:col = 1
 let g:folio = 1
-let g:submilestone = 0
+let g:submilestone = 1
 
 
 " les commandes d'insertion/d'incrémentation
@@ -21,6 +21,23 @@ function MS_content()
 		let ms = g:m
 	else
 		let g:sm = g:sm+1
+		" quand on arrive à la fin de l'introduction de BHL 985 (je sais pas
+		" faire des tests booléens en vim)
+		if g:m == 1
+			if g:sm == 32
+				let g:sm = 2
+				let g:m = 2
+			endif
+		endif
+		"Pas de de § 21 et 22 dans BHL985
+		if g:m == 2
+			if g:sm == 20
+				let g:sm = 22
+			endif
+			if g:sm == 24:
+				let g:m = "epilogue"
+				let g:submilestone = 0
+		endif
 		let ms = g:m.'.'.g:sm
 	endif
 	return "<milestone n=\"".ms."\" />\n\r"
