@@ -24,7 +24,7 @@ function MS_content()
 		" quand on arrive à la fin de l'introduction de BHL 985 (je sais pas
 		" faire des tests booléens en vim)
 		if g:m == 1
-			if g:sm == 32
+			if g:sm == 34
 				let g:sm = 2
 				let g:m = 2
 			endif
