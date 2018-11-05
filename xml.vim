@@ -34,7 +34,7 @@ function MS_content()
 			if g:sm == 20
 				let g:sm = 22
 			endif
-			if g:sm == 24:
+			if g:sm == 24
 				let g:m = "epilogue"
 				let g:submilestone = 0
 			endif
