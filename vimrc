@@ -49,6 +49,11 @@ Plug 'https://github.com/vim-voom/VOoM.git'
 
 Plug 'https://github.com/nathanaelkane/vim-indent-guides.git'
 Plug 'francoiscabrol/ranger.vim'
+
+Plug 'StanAngeloff/php.vim'
+Plug 'tobyS/pdv'
+Plug 'tobyS/vmustache'
+Plug 'SirVer/ultisnips'
 call plug#end()
 filetype plugin indent on
 
@@ -122,7 +127,6 @@ set background=dark
 "Police
 
 set guifont=Monaco:h16
-set antialias
 
 " Réglages pour l'édition
 " Avoir de l'UTF-8 par défaut
