@@ -54,6 +54,7 @@ Plug 'StanAngeloff/php.vim'
 Plug 'tobyS/pdv'
 Plug 'tobyS/vmustache'
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
 filetype plugin indent on
 
@@ -183,3 +184,8 @@ set novb
 augroup filetypedetect
     au BufRead,BufNewFile *.cls set filetype=tex
 augroup EN
+
+"snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
