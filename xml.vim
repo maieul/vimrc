@@ -29,7 +29,7 @@ function MS_content()
 				let g:m = 2
 			endif
 		endif
-		"Pas de de § 21 et 22 dans BHL985
+		"Pas de de § 21 et 22 dans BHL983
 		if g:m == 2
 			if g:sm == 20
 				let g:sm = 22
