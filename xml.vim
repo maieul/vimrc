@@ -33,13 +33,14 @@ function MS_content()
 		if g:m == 2
 			if g:sm == 20
 				let g:sm = 22
+				let ms = g:m.'.'.g:sm
 			endif
 			if g:sm == 25
 				let g:m = "epilogue"
 				let g:submilestone = 0
+				let ms = g:m
 			endif
 		endif
-		let ms = g:m.'.'.g:sm
 	endif
 	return "<milestone n=\"".ms."\" />\n\r"
 endfunction
