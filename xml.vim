@@ -28,6 +28,7 @@ function MS_content()
 			if g:sm == 34
 				let g:sm = 2
 				let g:m = 2
+				let ms = g:m.'.'.g:sm
 			endif
 		endif
 		"Pas de de § 21 et 22 dans BHL983
