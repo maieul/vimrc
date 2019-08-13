@@ -21,6 +21,7 @@ function MS_content()
 		let ms = g:m
 	else
 		let g:sm = g:sm+1
+		let ms = g:m.'.'.g:sm
 		" quand on arrive à la fin de l'introduction de BHL 985 (je sais pas
 		" faire des tests booléens en vim)
 		if g:m == 1
