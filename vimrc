@@ -42,7 +42,6 @@ Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 Plug 'https://github.com/gioele/vim-autoswap.git'
 
 Plug 'https://github.com/machakann/vim-highlightedyank.git'
-Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 
 Plug 'https://github.com/vim-latex/vim-latex.git'
 Plug 'https://github.com/vim-voom/VOoM.git'
