@@ -5,7 +5,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'http://github.com/mattn/emmet-vim.git'
-Plug 'https://github.com/iamcco/markdown-preview.vim.git'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'https://github.com/plasticboy/vim-markdown.git'
 Plug 'https://github.com/dkarter/bullets.vim.git'
 
