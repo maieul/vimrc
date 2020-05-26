@@ -178,6 +178,9 @@ set mouse=a
 "Désactiver le bip bisuel
 set novb
 
+" vimrc local
+set exrc
+set secure
 "cls
 
 augroup filetypedetect
