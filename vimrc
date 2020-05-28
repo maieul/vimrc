@@ -74,6 +74,11 @@ set linebreak
 set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
                           " (pour le scroll)
 
+" Coloration syntaxique
+syntax enable
+" Active les comportements specifiques aux types de fichiers comme la syntaxe et l'indentation
+filetype plugin on
+"
 "Indentation
 set autoindent
 set tabstop=2
@@ -99,13 +104,6 @@ set backspace=indent,eol,start
 " Cache les fichiers lors de l'ouverture d'autres fichiers
 set hidden
 
-" Coloration syntaxique
-syntax enable
-" Active les comportements specifiques aux types de fichiers comme la syntaxe et l'indentation
-filetype on
-filetype plugin on
-filetype indent on
-set ai "indentation automatique"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "		SWOOP
