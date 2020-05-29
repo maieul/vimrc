@@ -1,6 +1,7 @@
 " Vim Configuration - Maïeul Rouquette
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/chrisbra/vim-xml-runtime.git'
 Plug 'scrooloose/nerdcommenter'
 Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'https://github.com/tpope/vim-surround.git'
