@@ -7,11 +7,14 @@ set columns=80
 "Si je tape juste un point, cela me sauvegarde et fait un retour ligne
 imap .~ <C-V>046~
 imap . .<CR><Esc>:w<CR>a
-
-command! Plan Voom latex
+if expand('%:e')=='dtx'
+	command! Plan Voom latexDtx
+else
+	command! Plan Voom latex
+fi
 
 " Citation et note de bas de page
-:call IMAP('fn', '\footnote{<++>}<++>','tex')
+:call IMAP('fn', '\footnote{}<++>','tex')
 :call IMAP('fc', '\footcite[<++>]{<++>}<++>', 'tex')
 " Double {{ et autres (annulation de commande défini en standard)
 call IMAP('::', '::', 'tex')
