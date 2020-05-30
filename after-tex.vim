@@ -1,6 +1,6 @@
-" Chargé par ~/.vim/.after/ftpplugin/tex.vim
+" Chargé par ~/.vim/.after/ftplugin/tex.vim
 " 80 à l'affichage
-
+echo "sncf"
 set columns=80
 " point -> sauvegarde auto +
 "Si je tape .~, cela m'insère juste un point puis un ~
@@ -20,3 +20,7 @@ call IMAP('((', '((', 'tex')
 call IMAP('[[', '[[', 'tex')
 call IMAP('$$', '$$', 'tex')
 
+
+" orthographe
+syntax on
+syntax spell toplevel
