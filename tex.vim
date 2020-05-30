@@ -1,10 +1,4 @@
-"Lang
 set spell
-set spelllang=fr
-augroup SpellTeX
-  au!
-  au BufNewFile,BufRead *.dtx  setl spelllang=en
-augroup END
 "Indentation en espace pour latex
 setlocal expandtab
 setlocal shiftwidth=2

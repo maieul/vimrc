@@ -185,7 +185,9 @@ set secure
 augroup filetypedetect
     au BufRead,BufNewFile *.cls set filetype=tex
 augroup EN
-
+"Lang
+set spelllang=fr
+au BufNewFile,BufRead *.dtx  set spelllang=en
 "snippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
