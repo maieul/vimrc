@@ -54,8 +54,6 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'StanAngeloff/php.vim'
 Plug 'tobyS/pdv'
 Plug 'tobyS/vmustache'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 call plug#end()
 filetype plugin indent on
 
@@ -191,7 +189,3 @@ augroup EN
 "Lang
 set spelllang=fr
 au BufNewFile,BufRead *.dtx  set spelllang=en
-"snippets
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
