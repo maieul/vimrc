@@ -78,6 +78,7 @@ set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
 
 " Coloration syntaxique
 syntax enable
+set t_Co=16 "Pour avoir la couleur du terminal
 " Active les comportements specifiques aux types de fichiers comme la syntaxe et l'indentation
 filetype plugin on
 "
