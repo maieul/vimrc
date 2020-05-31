@@ -1,6 +1,7 @@
 " Vim Configuration - Maïeul Rouquette
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'http://github.com/ciaranm/detectindent'
 Plug 'https://github.com/chrisbra/vim-xml-runtime.git'
 Plug 'scrooloose/nerdcommenter'
 Plug 'https://github.com/majutsushi/tagbar.git'
@@ -85,6 +86,7 @@ set autoindent
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+:autocmd BufReadPost * :DetectIndent
 
 
 " -- Recherche
