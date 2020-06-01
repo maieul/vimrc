@@ -76,7 +76,8 @@ set scrolloff=3           " Affiche un minimum de 3 lignes autour du curseur
 
 " Coloration syntaxique
 syntax enable
-set t_Co=16 "Pour avoir la couleur du terminal
+"Pour avoir la couleur du terminal
+set notermguicolors t_Co=256
 " Active les comportements specifiques aux types de fichiers comme la syntaxe et l'indentation
 filetype plugin on
 "
@@ -120,9 +121,6 @@ augroup filetypedetect
 	au! BufRead,BufNewFile *.cbx	setfiletype tex
 augroup END
 let g:tex_flavor='latex'
-" Utilise la version sombre de Solarized
-set background=dark
-"colorscheme solarized
 
 "Police
 
