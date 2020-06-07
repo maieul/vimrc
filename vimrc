@@ -32,8 +32,8 @@ Plug 'https://github.com/haya14busa/incsearch.vim.git'
 Plug 'https://github.com/pelodelfuego/vim-swoop.git'
 Plug 'https://github.com/brooth/far.vim.git'
 
-Plug 'https://github.com/mhinz/vim-signify.git'
-Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/mhinz/vim-signify.git' "Pour les diff en marge
+Plug 'https://github.com/tpope/vim-fugitive.git' "Pour les commandes Git direct
 Plug 'https://github.com/christoomey/vim-conflicted.git'
 Plug 'https://github.com/jreybert/vimagit.git'
 
