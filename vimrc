@@ -3,7 +3,11 @@
 call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/chrisbra/vim-xml-runtime.git'
 Plug 'scrooloose/nerdcommenter'
+
+" Tagbar > liste des fonctions / commandes
 Plug 'https://github.com/majutsushi/tagbar.git'
+Plug 'https://github.com/vim-php/tagbar-phpctags.vim'
+
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'http://github.com/mattn/emmet-vim.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
