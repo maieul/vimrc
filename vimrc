@@ -4,10 +4,18 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/chrisbra/vim-xml-runtime.git'
 Plug 'scrooloose/nerdcommenter'
 
-" Tagbar > liste des fonctions / commandes
+" Tagbar > liste des' fonctions / commandes
 Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'https://github.com/vim-php/tagbar-phpctags.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
+" Autocompletion
+"Plug 'ncm2/ncm2'
+"Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
+"Plug 'phpactor/ncm2-phpactor'
+
+" Limiter les coquilles
+Plug 'neomake/neomake'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'http://github.com/mattn/emmet-vim.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -57,6 +65,8 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'StanAngeloff/php.vim'
 Plug 'tobyS/pdv'
 Plug 'tobyS/vmustache'
+
+Plug 'vim-vdebug/vdebug' "Debug pas à pas
 call plug#end()
 filetype plugin indent on
 
@@ -107,7 +117,8 @@ set backspace=indent,eol,start
 " Cache les fichiers lors de l'ouverture d'autres fichiers
 set hidden
 
-
+" Afficher les erreurs de syntaxe au fur et à mesure
+call neomake#configure#automake('nrwi', 500)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "		SWOOP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
