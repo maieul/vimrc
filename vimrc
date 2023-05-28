@@ -67,6 +67,8 @@ Plug 'tobyS/pdv'
 Plug 'tobyS/vmustache'
 
 Plug 'vim-vdebug/vdebug' "Debug pas à pas
+
+Plug 'https://github.com/vim-syntastic/syntastic' "Vérificateur de syntaxe
 call plug#end()
 filetype plugin indent on
 
