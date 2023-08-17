@@ -1,5 +1,6 @@
 #Contenu
-Une config vim adaptée à mes besoins, essentiellement édition LaTeX.
+
+Une config vim adaptée à mes besoins, essentiellement édition LaTeX et PHP
 
 Pour pouvoir versionné ce fichier sans versionne tout mon dossier de départ:
 
