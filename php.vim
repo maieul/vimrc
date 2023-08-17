@@ -4,3 +4,4 @@ nnoremap <leader>p :call pdv#DocumentWithSnip()<CR>
 "#set completeopt=noinsert,menuone,noselect
 
 let g:syntastic_php_checkers=['php', 'phpcs']
+
