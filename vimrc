@@ -13,7 +13,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'ku1ik/vim-pasta'
 " Autocompletion
 Plug 'ncm2/ncm2'
-Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php'}
+Plug 'phpactor/phpactor' , {'do': 'composer install', 'for': 'php'}
 Plug 'phpactor/ncm2-phpactor'
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'SirVer/ultisnips'
