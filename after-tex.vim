@@ -1,6 +1,5 @@
 " Chargé par ~/.vim/.after/ftplugin/tex.vim
 " 80 à l'affichage
-echo "sncf"
 set columns=80
 " point -> sauvegarde auto +
 "Si je tape .~, cela m'insère juste un point puis un ~
