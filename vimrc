@@ -218,23 +218,3 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 "Pour étendre les arguments des fonctions
 inoremap <silent> <expr> <CR> ncm2_ultisnips#expand_or("\<CR>", 'n')
-"Utiliser tabulation https://github.com/SirVer/ultisnips/issues/519#issuecomment-321740521
-let g:UltiSnipsExpandTrigger="<c-tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips'
-let g:ulti_expand_or_jump_res = 0
-function! CleverTab()"{{{
-    call UltiSnips#ExpandSnippetOrJump()
-    if g:ulti_expand_or_jump_res
-        return ""
-    else
-        if pumvisible()
-            return "\<c-n>"
-        else
-            return ""
-        endif
-    endif
-endfunction"}}}
-inoremap <silent> <tab> <c-r>=CleverTab()<cr>
-snoremap <silent> <tab> <esc>:call UltiSnips#ExpandSnippetOrJump()<cr>
