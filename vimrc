@@ -15,6 +15,9 @@ Plug 'ku1ik/vim-pasta'
 Plug 'ncm2/ncm2'
 Plug 'phpactor/phpactor' , {'do': 'composer install', 'for': 'php'}
 Plug 'phpactor/ncm2-phpactor'
+Plug 'ncm2/ncm2-ultisnips'
+Plug 'SirVer/ultisnips'
+Plug 'algotech/ultisnips-php'
 Plug 'roxma/nvim-yarp'
 
 Plug 'ncm2/ncm2-bufword'
